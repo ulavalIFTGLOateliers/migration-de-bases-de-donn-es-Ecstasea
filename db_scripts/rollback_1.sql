@@ -1,0 +1,13 @@
+ALTER TABLE musician DROP FOREIGN KEY bandName;
+
+ALTER TABLE musician RENAME TO singer;
+
+ALTER TABLE Band DROP PRIMARY KEY;
+
+DROP TABLE Band;
+
+ALTER TABLE singer DROP COLUMN role;
+
+ALTER TABLE singer DROP COLUMN bandName;
+
+ALTER TABLE singer RENAME COLUMN musicianName to singerName;
